@@ -11,10 +11,10 @@ from args import make_parser
 
 import torch
 from tqdm import tqdm
-from default_settings import GeneralSettings, get_detector_path_and_im_size, BoostTrackPlusPlusSettings, BoostTrackSettings
-from external.adaptors import detector
-from tracker.GBI import GBInterpolation
-from tracker.boost_track import BoostTrack
+from default_settings import GeneralSettings, BoostTrackPlusPlusSettings, BoostTrackSettings
+# from external.adaptors import detector
+# from tracker.GBI import GBInterpolation
+from boosttrack.tracker.boost_track import BoostTrack
 from ultralytics import YOLO
 from loguru import logger
 
@@ -185,9 +185,9 @@ def main():
         bw = xyxy[:, 2] - xyxy[:, 0]
         bh = xyxy[:, 3] - xyxy[:, 1]
         mask = (bw > 10) & (bh > 10)
-        print('-' * 100)
-        print(mask)
-        print(xyxy)
+        # print('-' * 100)
+        # print(mask)
+        # print(xyxy)
         
         xyxy = xyxy[mask]
         conf = conf[mask]
