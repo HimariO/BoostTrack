@@ -10,7 +10,7 @@ from typing import Optional, List
 import cv2
 import numpy as np
 
-from default_settings import GeneralSettings, BoostTrackSettings, BoostTrackPlusPlusSettings
+from .default_settings import GeneralSettings, BoostTrackSettings, BoostTrackPlusPlusSettings
 from .embedding import EmbeddingComputer
 from .assoc import associate, iou_batch, MhDist_similarity, shape_similarity, soft_biou_batch
 from .ecc import ECC

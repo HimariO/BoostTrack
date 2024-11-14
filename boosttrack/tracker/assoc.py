@@ -7,7 +7,7 @@ import numpy as np
 
 
 def shape_similarity(detects: np.ndarray, tracks: np.ndarray) -> np.ndarray:
-    from default_settings import BoostTrackSettings
+    from .default_settings import BoostTrackSettings
     if not BoostTrackSettings['s_sim_corr']:
         return shape_similarity_v1(detects, tracks)
     else:

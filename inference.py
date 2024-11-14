@@ -11,7 +11,7 @@ from args import make_parser
 
 import torch
 from tqdm import tqdm
-from default_settings import GeneralSettings, BoostTrackPlusPlusSettings, BoostTrackSettings
+from boosttrack.tracker.default_settings import GeneralSettings, BoostTrackPlusPlusSettings, BoostTrackSettings
 # from external.adaptors import detector
 # from tracker.GBI import GBInterpolation
 from boosttrack.tracker.boost_track import BoostTrack
