@@ -156,7 +156,7 @@ class BoostTrack(object):
         else:
             self.ecc = None
 
-    def update(self, dets, img_tensor, img_numpy, tag):
+    def update(self, dets, img_tensor, img_numpy, tag) -> np.ndarray:
         """
         Params:
           dets - a numpy array of detections in the format [[x1,y1,x2,y2,score],[x1,y1,x2,y2,score],...]

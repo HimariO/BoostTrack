@@ -5,7 +5,7 @@ import time
 from typing import *
 
 import numpy as np
-import dataset
+import boosttrack.dataset as dataset
 import utils
 from args import make_parser
 
